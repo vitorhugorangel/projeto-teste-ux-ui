@@ -1,0 +1,448 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+}
+
+.container{
+	max-width: 1280px;
+	margin: 0 auto;
+	padding: 0 2%;
+}
+
+.clear{
+	clear: both;
+}
+
+.w50 {
+	width: 50%;
+	float: left;
+}
+
+.w33 {
+	float: left;
+	width: 33.3%;
+}
+
+.w60{
+	width: 60%;
+	float: left;
+}
+
+.center{ text-align: center;}
+
+.logo{
+	float: left;
+}
+
+nav.menu-desktop{
+	float: right;
+}
+
+nav.menu-desktop li{
+	display: inline-block;
+	padding: 0 10px;
+	font-weight: lighter;
+}
+
+nav.menu-desktop ul{
+	position: relative;
+	top: 8px;
+
+}
+
+nav.menu-desktop a{
+	color: black;
+	text-decoration: none;
+}
+
+header{
+	padding: 8px 0;
+	background-color: #52aaa7;
+}
+
+nav.menu-desktop li.selected{ font-weight: normal; text-decoration: underline;}
+
+nav.menu-desktop a:hover{ text-decoration: underline; }
+
+.logo h2{ font-weight: normal; font-size: 23px; }
+
+.logo a {
+	color: black;
+	text-decoration: none;
+}
+
+/*section main*/
+
+section.main{
+	position: relative;
+	width: 100%;
+	padding: 100px 0 200px 0;
+	background-image: url(../img/bg-main.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+section.main > .container{
+	position: relative;
+	z-index: 2;
+}
+
+.overlay{
+	z-index: 1;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.4);
+	left: 0;
+	top: 0;
+}
+
+section.main h2{
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	font-weight: normal;
+}
+
+section.main p{
+	text-align: left;
+	color: white;
+	font-size: 17px;
+	margin-top: 15px;
+}
+
+section.diferenciais{
+	padding: 30px 0;
+	text-align: center;
+}
+
+.line-text{
+	display: inline-block;
+	position: relative;
+	color: #52aaa7;
+
+}
+
+.line-text > div{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 50px;
+	height: 3px;
+	background: #52aaa7;
+
+}
+
+.line-text h2{
+	font-weight: normal;
+	font-size: 27px;
+}
+
+.icones-diferenciais{
+	margin-top: 35px;
+}
+
+.box-single {
+	float: left;
+	width: 33.3%;
+	padding: 0 10px;
+	margin-bottom: 20px;
+}
+
+.box-single h2{
+	color: #8a6b62;
+	font-size: 40px;
+}
+
+.box-single p{
+	color: #646464;
+	font-weight: lighter;
+	font-size: 16px;
+}
+
+
+section.sobre-equipe{
+	padding: 30px 0;
+	background-color: rgb(225,225,225);
+
+}
+
+section.sobre-equipe > .container{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.equipe-container{
+	width: 50%;
+}
+
+.sobre-container{
+	width: 50%;
+}
+
+.sobre-container p{
+	color: black;
+	font-size: 15px;
+	margin-top: 10px;
+
+}
+
+.img-avatar{
+	display: inline-block;
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+	background-size: 100% 100%;
+	background-color: gray;
+}
+
+.avatar-box{
+	margin-top: 15px;
+}
+
+.descricao-avatar{
+	padding: 0 10px;
+	display: inline-block;
+	width: calc(100% - 70px);
+}
+
+.descricao-avatar h3{
+	color: rgb(30, 30, 30);
+	font-style: italic;
+	font-weight: normal;
+}
+
+.descricao-avatar p{
+	color: rgb(30, 30, 30);
+	font-weight: lighter;
+}
+
+section.inscricao{
+	background-color: #52aaa7;
+	padding: 20px 0;
+}
+
+.inscricao-form input[type="submit"]{
+	width: 120px;
+	background: #1d6c64;
+	height: 40px;
+	cursor: pointer;
+	display: inline-block;
+	border: 0;
+	color: white;
+	font-size: 16px;
+
+}
+
+.inscricao-form input[type="text"]{
+	width: calc(100% - 120px);
+	border: 1px solid #ccc;
+	background: white;
+	height: 40px;
+	padding-left: 8px;
+}
+
+h2.inscricao-texto{
+	font-weight: normal;
+	color: white;
+}
+
+section.cards{
+	padding: 30px 0;
+}
+
+.card-single{
+	width: 33.3%;
+	float: left;
+	padding: 50px;
+}
+
+.card-single img{
+	width: 100%;
+}
+
+.card-single h2{
+	margin-top: 5px;
+	font-weight: normal;
+	font-size: 19px;
+}
+
+.card-single p{
+	margin-top: 10px 0;
+	font-weight: lighter;
+	font-size: 16px;
+	border-bottom: 2px solid #ccc;
+	padding-bottom: 20px;
+}
+
+footer.footer-one{
+	background-color: #52aaa7;
+	padding: 20px 0;
+	color: white;
+}
+
+footer.footer-one h2{
+	font-weight: normal;
+	font-size: 23px;
+}
+
+footer.footer-one p{
+	margin-top: 8px;
+	font-weight: lighter;
+}
+
+footer.footer-one a{
+	display: block;
+	color: white;
+}
+
+div.group-icons a{
+	font-size: 18px;
+	display: inline-block;
+	margin: 15px 10px;
+}
+
+footer.footer-two{
+	color: white;
+	text-align: center;
+	background-color: #237a70;
+	padding: 15px 0;
+
+}
+
+.title-page{
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+nav.menu-mobile{ display: none; float: right;}
+
+nav.menu-mobile h2 {cursor: pointer;}
+
+nav.menu-mobile ul{ 
+	display: block;
+	width: 100%;
+	top: 50px;
+	left: 0;
+	background-color: #52aaa7;
+	position: absolute;
+	z-index: 999;
+	text-align: center;
+}
+
+nav.menu-mobile li{
+	padding: 3px 0;
+	border-bottom: 1px solid black;
+}
+
+nav.menu-mobile li.selected{
+	background-color: #52aab9;
+}
+
+section.contato{
+	padding: 40px 0;
+	color: white;
+}
+
+section.contato .w50,
+section.contato .w100{
+	padding: 0 10px;
+}
+
+.formulario form{
+	margin-top: 10px;
+}
+
+.formulario input[type=text], 
+.formulario input[type=email]{
+	width: 100%;
+	height: 40px;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+	padding-left: 8px;
+}
+
+.formulario h2{
+	text-align: center;
+	background-color: #DDDDDD;
+	color: #ACAC9D;
+	font-size: 16px;
+	font-weight: normal;
+	border-left: 3px solid #cccccc;
+	padding:  4px 0;
+
+}
+
+.formulario textarea{
+	width: 100%;
+	height: 120px;
+	border: 1px solid #ccc;
+	margin-bottom: 15px;
+	padding-left: 8px;
+	resize: vertical;
+
+}
+
+@media screen and (max-width: 768px){
+
+	section.contato .w50,
+	section.contato .w100,
+	section.contato .w60{
+		width: 100%;
+	}
+
+	nav.menu-mobile{
+		display: block;
+	}
+
+	nav.menu-desktop{
+		display: none;
+	}
+
+	footer.footer-one{
+		text-align: center;
+	}
+
+	.w50, .w33 {
+		width: 100%;
+		margin-bottom: 20px;
+	}
+	
+	.box-single{
+		width: 100%;
+	}
+
+	.equipe-container{
+		width: 100%;
+	}
+
+	.sobre-container{
+		width: 100%;
+		margin-top: 60px;
+	}
+
+	.card-single{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px){
+	.card-single{
+		padding: 10px;
+	}
+
+	section.contato .w50,
+	section.contato .w100,
+	section.contato .w60{
+		width: 100%;
+	}
+
+}
